@@ -8,7 +8,7 @@ docker push weleek/centos7.ssh.python:1.0.1
 docker run -d -it -net bridge -p 22 --name centos7_python weleek/centos7.ssh.python /sbin/init
 
 # access container
-docker exec -it centos7_python /bin/bash
+docker exec -it -u admin centos7_python /bin/bash
 
 # stop the container
 docker stop centos7_python
