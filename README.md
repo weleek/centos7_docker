@@ -2,7 +2,7 @@
 Dockerfile management.
 
 # image download
-docker push weleek/centos7.ssh.python:1.0.1
+docker pull weleek/centos7.ssh.python:1.0.1
 
 # create container from image
 docker run -d -it -net bridge -p 22 --name centos7_python weleek/centos7.ssh.python /sbin/init
